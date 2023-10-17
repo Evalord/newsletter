@@ -1,0 +1,26 @@
+html,
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: grid;
+    width: 100%;
+    place-items: center;
+
+}
+
+div.content {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 800px;
+    align-content: center;
+}
+
+button {
+    background-color: hsl(4, 100%, 67%);
+    margin-top: 8px;
+}
+
+p {
+    font-size: 16px;
+}
