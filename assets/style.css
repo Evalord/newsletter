@@ -1,10 +1,18 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    /* padding: 0; */
+    /* margin: 0; */
+    box-sizing: border-box;
+}
 body {
     background-color: hsl(235, 18%, 26%);
     display: grid;
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
     place-items: center;
-
+    font-family: 'Roboto';
+    /* margin: 0 auto; */
 }
 
 div.content {
@@ -12,15 +20,131 @@ div.content {
     border-radius: 10px;
     display: flex;
     background-color: hsl(0, 0%, 100%);
-    width: 800px;
+    width: 900px;
     align-content: center;
 }
+div.list{
+    font-size:12px ;
+}
+div.box{
+    font-size: 12px;
+    font-weight: 700px;
+    border: none;
+    /* width: 100%; */
+    border-radius: 8px;
+}
 
-button {
-    background-color: hsl(4, 100%, 67%);
-    margin-top: 8px;
+
+.left-content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-content h1{
+    margin: 0;
+    font-size:3.2em ;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%) ;
+}
+.left-content h3{
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(234, 29%, 20%)
+}
+.block-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.block-icon p {
+    font-size: 16px;
+    margin: 0.5rem 0rem;
 }
 
 p {
     font-size: 16px;
+}
+.box-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 1rem; */
+}
+.box-form label{
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color:  rgb(36, 39, 66);
+}
+.box-form input{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1rem 0rem;
+}
+.box-form input:focus{
+   outline-color: hsl(4, 49%, 61%);
+}
+.box-form button {
+    /* background-color: hsl(4, 100%, 67%); */
+    transition: 0.3s;
+    background-color: rgb(36, 39, 66);
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700px;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+
+
+}
+.box-form button:hover{
+    transition: 0.5s ;
+    background:linear-gradient(to right,  hsl(4, 49%, 61%),hsl(4, 100%, 67%));
+
+}
+
+/* success */
+
+div.sub-content {
+    padding: 20px;
+    border-radius: 20px;
+    /* display: flex; */
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    /* align-content: center; */
+
+
+}
+
+
+svg {
+    width: max-content;
+    height: max-content;
+}
+
+h1 {
+    font-size:40px ;
+}
+
+p {
+font-size:12px ; 
+
+}
+
+button.sub-button {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    
+
 }
