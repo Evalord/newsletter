@@ -8,7 +8,8 @@
 body {
     background-color: hsl(235, 18%, 26%);
     display: grid;
-    /* width: 100%; */
+    /* width: 100vh; */
+    /* overflow-y: hidden; */
     height: 100%;
     place-items: center;
     font-family: 'Roboto';
@@ -111,40 +112,58 @@ p {
 /* success */
 
 div.sub-content {
-    padding: 20px;
+    margin: 0 auto;
+    padding: 30px;
     border-radius: 20px;
     /* display: flex; */
     background-color: hsl(0, 0%, 100%);
-    width: 300px;
+    width: 350px;
     /* align-content: center; */
 
 
 }
 
 
-svg {
-    width: max-content;
+.svg-container svg {
+    width: 50px;
     height: max-content;
+    margin-bottom: 1rem;
 }
 
 h1 {
     font-size:40px ;
+   color: hsl(234, 29%, 20%);
+   margin: 0;
+   
+   
+
 }
 
 p {
-font-size:12px ; 
+font-size:14px ; 
+margin: 0;
+margin-bottom: 1rem;
+color: hsl(234, 29%, 20%);;
 
 }
 
 button.sub-button {
-    background-color: hsl(4, 100%, 67%);
+    background-color: hsl(234, 29%, 20%);
+    transition:0.3s;
+    cursor: pointer;
     border: none;
     width: 100%;
-    padding: 12px;
-    border-radius: 8px;
+    padding:1rem;
+    border-radius: 5px;
     color: white;
     font-weight: 700;
     font-size: 13px;
     
+
+}
+
+button.sub-button:hover{
+    transition: 0.5s ;
+    background:linear-gradient(to right,  hsl(4, 49%, 61%),hsl(4, 100%, 67%));
 
 }
