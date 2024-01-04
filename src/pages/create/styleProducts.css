@@ -1,0 +1,54 @@
+#root {
+    height: 100vh;
+    width: 100%;
+}
+
+.contentProduct {
+    padding: 80px 80px 80px 150px;
+    background-color: rgba(128, 128, 128, 0.678);
+
+}
+.createForm{
+padding: 40px;
+width: 80%;
+}
+.createForm h3 {
+    padding: 0px 0px 0px 100px;
+    color: white;
+}
+.error-Message{
+    color: red;
+    font-size:15px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0px 150px;
+}
+.errorMessage {
+    color: red;
+    font-style: italic;
+    font-size: small;
+}
+
+
+.productInfo label .formArticles label {
+   color: white;
+}
+
+.formArticles input,
+.productInfo input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.btn-submit button {
+    background-color: rgba(89, 0, 255, 0.634);
+    color: white;
+    width: 82%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: medium;
+}
